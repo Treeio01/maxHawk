@@ -1,258 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MaxHAWK</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+  <body class="bg-black w-full flex flex-col items-center overflow-x-hidden">
+    <img
+      src="./assets/img/ellipse.svg"
+      class="absolute top-[130px] min-w-[3200px] left-1/2 -translate-x-1/2 -z-10"
+      alt=""
+    />
 
-<body class="bg-black w-full flex flex-col items-center">
-    <img src="./assets/img/ellipse.png" class="absolute top-[130px] left-1/2 -translate-x-1/2 -z-10" alt="">
+    <div
+      id="mobileMenuContent"
+      class="flex flex-col gap-6 p-6 justify-start bg-black fixed right-[-100%] top-0 overflow-y-hidden transition-all duration-300 ease-in-out z-[111] w-[300px] h-full"
+    >
+      <div class="flex items-center gap-3">
+        <img src="./assets/img/logo.svg" alt="" />
+      </div>
+      <div id="mobileMenuClose" class="absolute top-7 right-7">
+        <svg
+          width="25px"
+          height="25px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="Menu / Close_MD">
+            <path
+              id="Vector"
+              d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18"
+              stroke="#000420"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </svg>
+      </div>
+      <ul id="headerListMobile" class="flex flex-col gap-2">
+        <li>
+          <a
+            href="about-course.html"
+            class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+            >O kursie</a
+          >
+        </li>
+        <li>
+          <a
+            href="why-this-work.html"
+            class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+            >Dlaczego to działa?</a
+          >
+        </li>
+        <li>
+          <a
+            href="FAQ.html"
+            class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+            >FAQ</a
+          >
+        </li>
+      </ul>
 
-    <div id="mobileMenuContent"
-        class="flex flex-col  gap-6 p-6 justify-start bg-black fixed right-[-100%] top-0 overflow-y-hidden transition-all duration-300 ease-in-out z-[111] w-[300px] h-full">
-        <div class="flex items-center gap-3">
-            <img src="./assets/img/logo.svg" alt="" />
-        </div>
-        <div id="mobileMenuClose" class="absolute top-7 right-7">
-            <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="Menu / Close_MD">
-                    <path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#000420" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                </g>
-            </svg>
-        </div>
-        <ul id="headerListMobile" class="flex flex-col gap-2">
-            <li>
-                <a href="about-course.html"
-                    class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out">О
-                    курсе</a>
-            </li>
-            <li>
-                <a href="why-this-work.html"
-                    class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out">Почему
-                    это работает?</a>
-            </li>
-            <li>
-                <a href="FAQ.html"
-                    class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out">FAQ</a>
-            </li>
-        </ul>
-
-        <button
-            class=" py-2 px-8 hover:opacity-80 transition-opacity cursor-pointer duration-300 ease-in-out  rounded-[18px] bg-gradient-to-b from-[#974BF8] to-[#AD7AFF] border-white/25 border shadow-[inset_0px_0px_13px_rgba(255,255,255,0.25)]">
-            <span class="text-white font-medium text-2xl tracking-[-0.05em]">
-                Об авторе
-            </span>
-        </button>
+      <button
+        class="py-2 px-8 hover:opacity-80 transition-opacity cursor-pointer duration-300 ease-in-out rounded-[18px] bg-gradient-to-b from-[#974BF8] to-[#AD7AFF] border-white/25 border shadow-[inset_0px_0px_13px_rgba(255,255,255,0.25)]"
+      >
+        <span class="text-white font-medium text-2xl tracking-[-0.05em]">
+          Kim jestem?
+        </span>
+      </button>
     </div>
     <div class="flex flex-col w-full max-w-[1384px] items-center mt-[69px]">
-        <header class="w-full flex justify-between items-center">
-            <img src="./assets/img/logo.png" class="max-w-[126px]" alt="">
-            <ul class="hidden lg:flex gap-6 items-center ">
-                <li>
-                    <a href="about-course.html"
-                        class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out">О
-                        курсе</a>
-                </li>
-                <li>
-                    <a href="why-this-work.html"
-                        class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out">Почему
-                        это работает?</a>
-                </li>
-                <li>
-                    <a href="FAQ.html"
-                        class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out">FAQ</a>
-                </li>
-            </ul>
+      <header class="w-full flex justify-between items-center">
+        <a href="/"><img src="./assets/img/logo.png" class="max-w-[126px]" alt="" /></a> 
+        <ul class="hidden lg:flex gap-6 items-center">
+          <li>
+            <a
+              href="about-course.html"
+              class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+              >O kursie</a
+            >
+          </li>
+          <li>
+            <a
+              href="why-this-work.html"
+              class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+              >Dlaczego to działa?</a
+            >
+          </li>
+          <li>
+            <a
+              href="FAQ.html"
+              class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+              >FAQ</a
+            >
+          </li>
+        </ul>
+        <button onclick="window.location.href='about-author.html'"
+          class="hidden lg:flex py-2 px-8 hover:opacity-80 transition-opacity cursor-pointer duration-300 ease-in-out rounded-[18px] bg-gradient-to-b from-[#974BF8] to-[#AD7AFF] border-white/25 border shadow-[inset_0px_0px_13px_rgba(255,255,255,0.25)]"
+        >
+          <span class="text-white font-medium text-2xl tracking-[-0.05em]">
+            Kim jestem?
+          </span>
+        </button>
+        <button
+          id="mobileMenu"
+          class="flex lg:hidden cursor-pointer gap-4 z-40 p-1 rounded-[6px]"
+        >
+          <svg
+            width="40px"
+            height="40px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 6H20M4 12H20M4 18H20"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </header>
+      <main
+        class="flex flex-col gap-7 max-w-[805px] mt-[56px] items-center z-20"
+      >
+        <h1
+          class="font-semibold text-white text-[72px] tracking-[-0.05em] text-center"
+        >
+          System zarabiania na delegowaniu usług
+        </h1>
+        <div class="flex flex-col items-center gap-[52px]">
+          <span
+            class="text-[#B0B0B0] font-medium text-[28px] text-center max-w-[569px] tracking-[-0.05em]"
+          >
+            Tylko to, co naprawdę działa i przynosi mi $6000-7000 miesięcznie
+          </span>
+          <div class="flex items-center gap-6">
             <button
-                class="hidden lg:flex py-2 px-8 hover:opacity-80 transition-opacity cursor-pointer duration-300 ease-in-out  rounded-[18px] bg-gradient-to-b from-[#974BF8] to-[#AD7AFF] border-white/25 border shadow-[inset_0px_0px_13px_rgba(255,255,255,0.25)]">
-                <span class="text-white font-medium text-2xl tracking-[-0.05em]">
-                    Об авторе
-                </span>
+              class="py-3 px-[42px] hover:opacity-80 transition-opacity cursor-pointer duration-300 ease-in-out rounded-[28px] bg-gradient-to-b from-[#974BF8] to-[#AD7AFF] border-white/25 border"
+            >
+              <span class="text-white font-medium text-2xl tracking-[-0.05em]">
+                Zobacz więcej
+              </span>
             </button>
-            <button id="mobileMenu" class="flex lg:hidden cursor-pointer gap-4 z-40 p-1 rounded-[6px]">
-                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 6H20M4 12H20M4 18H20" stroke="white" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
+            <button
+              class="py-3 px-[42px] hover:opacity-80 transition-opacity cursor-pointer duration-300 ease-in-out rounded-[28px] bg-gradient-to-b from-[#974BF8] to-[#AD7AFF] border-white/25 border"
+            >
+              <span class="text-white font-medium text-2xl tracking-[-0.05em]">
+                Zdobądź dostęp
+              </span>
             </button>
-        </header>
-        <main class="flex flex-col gap-7 max-w-[805px] mt-[56px] items-center z-20">
-            <h1 class="font-semibold text-white text-[72px] tracking-[-0.05em] text-center">
-                Система заработка на делигировании услуг
-            </h1>
-            <div class="flex flex-col items-center gap-[52px]">
-                <span class="text-[#B0B0B0] font-medium text-[28px] text-center max-w-[569px] tracking-[-0.05em]">
-                    Только то, что реально работает и приносит мне $6000-7000 в месяц
-                </span>
-                <div class="flex items-center gap-6">
-                    <button
-                        class="py-3 px-[42px] hover:opacity-80 transition-opacity cursor-pointer duration-300 ease-in-out  rounded-[28px] bg-gradient-to-b from-[#974BF8] to-[#AD7AFF] border-white/25 border">
-                        <span class="text-white font-medium text-2xl tracking-[-0.05em]">
-                            Подробнее
-                        </span>
-                    </button>
-                    <button
-                        class="py-3 px-[42px] hover:opacity-80 transition-opacity cursor-pointer duration-300 ease-in-out  rounded-[28px] bg-gradient-to-b from-[#974BF8] to-[#AD7AFF] border-white/25 border ">
-                        <span class="text-white font-medium text-2xl tracking-[-0.05em]">
-                            Получить доступ
-                        </span>
-                    </button>
-                </div>
+          </div>
+        </div>
+      </main>
+      <section class="mt-[177px] w-full flex flex-col gap-8 z-20">
+        <span class="font-medium text-[42px] tracking-[-0.05em] text-[#E0E0E0]">
+          Dlaczego warto zacząć?
+        </span>
+        <div class="flex gap-[22px] flex-wrap w-full justify-center">
+          <div
+            class="flex overflow-hidden gap-[35px] relative items-center w-full max-w-[681px] bg-[#151520]/70 px-[42px] py-[50px] rounded-[42px] border border-[#2B2C34]"
+          >
+            <div
+              class="flex min-w-[398px] min-h-[92px] bg-[#0FCA0F] blur-[110px] absolute rounded-full left-1/2 -translate-x-1/2 bottom-[-67px]"
+            ></div>
+            <div class="flex p-3 bg-[#0FCA0F]/10 rounded-[18px]">
+              <img src="./assets/img/wallet.svg" alt="" />
             </div>
-        </main>
-        <section class="mt-[177px] w-full flex flex-col gap-8 z-20">
-            <span class="font-medium text-[42px] tracking-[-0.05em] text-[#E0E0E0]">
-                Почему стоит начать?
+            <div class="flex flex-col gap-2">
+              <span
+                class="font-medium text-[#E0E0E0] text-[28px] tracking-[-0.05em]"
+              >
+                Nie potrzebujesz kapitału na start
+              </span>
+              <span
+                class="font-medium text-white/70 text-[18px] tracking-[-0.05em]"
+              >
+                Możesz zacząć zarabiać bez <br />
+                inwestowania własnych pieniędzy
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex overflow-hidden gap-[35px] relative items-center w-full max-w-[681px] bg-[#151520]/70 px-[42px] py-[50px] rounded-[42px] border border-[#2B2C34]"
+          >
+            <div
+              class="flex min-w-[398px] min-h-[92px] bg-[#F8924B] blur-[110px] absolute rounded-full left-1/2 -translate-x-1/2 bottom-[-67px]"
+            ></div>
+            <div class="flex p-3 bg-[#F8924B]/10 rounded-[18px]">
+              <img src="./assets/img/favorites.svg" alt="" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <span
+                class="font-medium text-[#E0E0E0] text-[28px] tracking-[-0.05em]"
+              >
+                Krok po kroku
+              </span>
+              <span
+                class="font-medium text-white/70 text-[18px] tracking-[-0.05em]"
+              >
+                Od znalezienia klienta do płatności i realizacji
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex overflow-hidden gap-[35px] relative items-center w-full max-w-[681px] bg-[#151520]/70 px-[42px] py-[50px] rounded-[42px] border border-[#2B2C34]"
+          >
+            <div
+              class="flex min-w-[398px] min-h-[92px] bg-[#1A58E3] blur-[110px] absolute rounded-full left-1/2 -translate-x-1/2 bottom-[-67px]"
+            ></div>
+            <div class="flex p-3 bg-[#1A58E3]/10 rounded-[18px]">
+              <img src="./assets/img/people.svg" alt="" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <span
+                class="font-medium text-[#E0E0E0] text-[28px] tracking-[-0.05em]"
+              >
+                Delegowanie
+              </span>
+              <span
+                class="font-medium text-white/70 text-[18px] tracking-[-0.05em]"
+              >
+                Zlecasz pracę wykonawcom — <br />
+                nie musisz robić wszystkiego sam
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex overflow-hidden gap-[35px] relative items-center w-full max-w-[681px] bg-[#151520]/70 px-[42px] py-[50px] rounded-[42px] border border-[#2B2C34]"
+          >
+            <div
+              class="flex min-w-[398px] min-h-[92px] bg-[#E60220] blur-[110px] absolute rounded-full left-1/2 -translate-x-1/2 bottom-[-67px]"
+            ></div>
+            <div class="flex p-3 bg-[#E60220]/10 rounded-[18px]">
+              <img src="./assets/img/clock.svg" alt="" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <span
+                class="font-medium text-[#E0E0E0] text-[28px] tracking-[-0.05em]"
+              >
+                Elastyczny grafik
+              </span>
+              <span
+                class="font-medium text-white/70 text-[18px] tracking-[-0.05em]"
+              >
+                Pracujesz, kiedy chcesz. Zautomatyzuj <br />
+                procesy i zarabiaj, nawet gdy nie pracujesz
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="flex flex-col mt-[62px] gap-[62px] items-center">
+        <h1 class="text-white font-semibold text-[52px] tracking-[-0.05em]">
+          Zarabianie na delegowaniu w praktyce
+        </h1>
+        <div class="flex items-center gap-[52px]">
+          <div class="flex flex-col gap-2">
+            <span
+              class="text-[#B0B0B0] font-medium text-[28px] tracking-[-0.05em] text-balance"
+            >
+              Zarabianie na delegowaniu w praktyce Stworzyłem prosty, ale
+              skuteczny system. Bez własnych umiejętności technicznych, a mimo
+              to zarabiam na usługach. Działa u mnie. Działa u innych. Zobacz,
+              jak to może działać u Ciebie:
             </span>
-            <div class="flex gap-[22px] flex-wrap w-full justify-center">
-                <div
-                    class="flex overflow-hidden gap-[35px] relative items-center w-full max-w-[681px] bg-[#151520]/70 px-[42px] py-[50px] rounded-[42px] border border-[#2B2C34]">
-                    <div
-                        class="flex min-w-[398px] min-h-[92px] bg-[#0FCA0F] blur-[110px] absolute rounded-full left-1/2 -translate-x-1/2 bottom-[-67px]">
-                    </div>
-                    <div class="flex p-3 bg-[#0FCA0F]/10 rounded-[18px]">
-                        <img src="./assets/img/wallet.svg" alt="">
-                    </div>
-                    <div class="flex flex-col gap-2">
-                        <span class="font-medium text-[#E0E0E0] text-[28px] tracking-[-0.05em]">
-                            Стартовый капитал не нужен
-                        </span>
-                        <span class="font-medium  text-white/70 text-[18px] tracking-[-0.05em]">
-                            Можешь начать зарабатывать <br>
-                            без вложений своих средств
-                        </span>
-                    </div>
-                </div>
-
-                <div
-                    class="flex overflow-hidden gap-[35px] relative items-center w-full max-w-[681px] bg-[#151520]/70 px-[42px] py-[50px] rounded-[42px] border border-[#2B2C34]">
-                    <div
-                        class="flex min-w-[398px] min-h-[92px] bg-[#F8924B] blur-[110px] absolute rounded-full left-1/2 -translate-x-1/2 bottom-[-67px]">
-                    </div>
-                    <div class="flex p-3 bg-[#F8924B]/10 rounded-[18px]">
-                        <img src="./assets/img/favorites.svg" alt="">
-                    </div>
-                    <div class="flex flex-col gap-2">
-                        <span class="font-medium text-[#E0E0E0] text-[28px] tracking-[-0.05em]">
-                            Шаг за шагом
-                        </span>
-                        <span class="font-medium  text-white/70 text-[18px] tracking-[-0.05em]">
-                            От поиска клиентов до оплаты. Приведём <br>
-                            тебя к клиенту за ручку
-                        </span>
-                    </div>
-                </div>
-
-                <div
-                    class="flex overflow-hidden gap-[35px] relative items-center w-full max-w-[681px] bg-[#151520]/70 px-[42px] py-[50px] rounded-[42px] border border-[#2B2C34]">
-                    <div
-                        class="flex min-w-[398px] min-h-[92px] bg-[#1A58E3] blur-[110px] absolute rounded-full left-1/2 -translate-x-1/2 bottom-[-67px]">
-                    </div>
-                    <div class="flex p-3 bg-[#1A58E3]/10 rounded-[18px]">
-                        <img src="./assets/img/people.svg" alt="">
-                    </div>
-                    <div class="flex flex-col gap-2">
-                        <span class="font-medium text-[#E0E0E0] text-[28px] tracking-[-0.05em]">
-                            Делегирование
-                        </span>
-                        <span class="font-medium  text-white/70 text-[18px] tracking-[-0.05em]">
-                            Фрилансеры сделают работу за тебя. <br>
-                            Делегируй заказы исполнителям
-                        </span>
-                    </div>
-                </div>
-
-                <div
-                    class="flex overflow-hidden gap-[35px] relative items-center w-full max-w-[681px] bg-[#151520]/70 px-[42px] py-[50px] rounded-[42px] border border-[#2B2C34]">
-                    <div
-                        class="flex min-w-[398px] min-h-[92px] bg-[#E60220] blur-[110px] absolute rounded-full left-1/2 -translate-x-1/2 bottom-[-67px]">
-                    </div>
-                    <div class="flex p-3 bg-[#E60220]/10 rounded-[18px]">
-                        <img src="./assets/img/clock.svg" alt="">
-                    </div>
-                    <div class="flex flex-col gap-2">
-                        <span class="font-medium text-[#E0E0E0] text-[28px] tracking-[-0.05em]">
-                            Гибкий график
-                        </span>
-                        <span class="font-medium  text-white/70 text-[18px] tracking-[-0.05em]">
-                            Нету необходимости работать 24/7. <br>
-                            Построй график под себя
-                        </span>
-                    </div>
-                </div>
+          </div>
+          <div class="flex w-full max-w-[596px]">
+            <video
+              class="rounded-[28px] w-full max-w-[596px]"
+              autoplay
+              muted
+              loop
+              controls
+              src="./assets/video/video.mp4"
+            ></video>
+          </div>
+        </div>
+      </section>
+      <footer
+        class="bg-[#0E0E0F] flex flex-col gap-9 p-[62px] mt-[82px] rounded-t-[42px] w-full border-2 border-[#2B2C34]"
+      >
+        <div class="flex items-center justify-between">
+          <div class="flex flex-col gap-2 max-w-[528px]">
+            <span class="text-white font-medium text-[52px] tracking-[-0.05em]">
+              Max Hawk
+            </span>
+            <span
+              class="text-[#B0B0B0] font-medium text-[28px] tracking-[-0.05em]"
+            >
+              Zarabianie na delegowaniu usług. Im mniej robisz sam, tym więcej
+              zarabiasz.
+            </span>
+          </div>
+          <div class="flex flex-col items-end gap-6">
+            <span
+              class="text-[42px] font-medium tracking-[-0.05em] text-[#B0B0B0]"
+            >
+              Contact
+            </span>
+            <div
+              class="flex p-3 rounded-xl bg-white/10 hover:bg-white/20 duration-300 transition-colors ease-in-out cursor-pointer"
+            >
+              <img src="./assets/img/telegram.svg" alt="" />
             </div>
-        </section>
-        <section class="flex flex-col mt-[62px] gap-[62px] items-center">
-            <h1 class="text-white font-semibold text-[52px] tracking-[-0.05em]">
-                О себе
-            </h1>
-            <div class="flex items-center gap-[52px]">
-                <div class="flex flex-col gap-2">
-                    <span class="font-medium text-5xl tracking-[-0.05em] text-white">
-                        Max Hawk
-                    </span>
-                    <span class="text-[#B0B0B0] font-medium text-[28px] tracking-[-0.05em] text-balance">
-                        Начинал с видеомонтажа на фрилансе, затем собрал простую систему для делегирования проектов.
-                        Эта сфера отлично подходит для новичков в бизнесе.
-                    </span>
-                </div>
-                <div class="flex w-full max-w-[596px]">
-                    <video class=" rounded-[28px] w-full max-w-[596px]" autoplay muted loop controls
-                        src="./assets/video/video.mp4"></video>
-                </div>
-            </div>
-        </section>
-        <footer
-            class="bg-[#0E0E0F] flex flex-col gap-9 p-[62px] mt-[82px] rounded-t-[42px] w-full border-2 border-[#2B2C34]">
-            <div class="flex items-center justify-between">
-                <div class="flex flex-col gap-2 max-w-[528px]">
-                    <span class="text-white font-medium text-[52px] tracking-[-0.05em] ">
-                        Max Hawk
-                    </span>
-                    <span class="text-[#B0B0B0] font-medium text-[28px] tracking-[-0.05em] ">
-                        Делегируй заказы и зарабатывай вместе со мной — всё просто и эффективно.
-                    </span>
-                </div>
-                <div class="flex flex-col items-end gap-6">
-                    <span class="text-[42px] font-medium tracking-[-0.05em] text-[#B0B0B0]">
-                        Contact
-                    </span>
-                    <div class="flex p-3 rounded-xl bg-white/10 hover:bg-white/20 duration-300 transition-colors ease-in-out cursor-pointer">
-                        <img src="./assets/img/telegram.svg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="w-full h-[1px] bg-white/25">
-
-            </div>
-            <div class="flex justify-between items-center">
-                <ul class="flex gap-[42px] items-center">
-                    <li><a href="privacy.html"
-                            class="font-medium text-2xl tracking-[-0.05em] text-[#B0B0B0] hover:text-white transition-colors duration-300 ease-in-out">Privacy
-                            policy</a></li>
-                    <li><a href="refund.html"
-                            class="font-medium text-2xl tracking-[-0.05em] text-[#B0B0B0] hover:text-white transition-colors duration-300 ease-in-out">Refund
-                            policy</a></li>
-                </ul>
-                <span class="font-medium text-2xl tracking-[-0.05em] text-[#B0B0B0]">
-                    Email: afdsgsg@gmail.com
-                </span>
-            </div>
-        </footer>
+          </div>
+        </div>
+        <div class="w-full h-[1px] bg-white/25"></div>
+        <div class="flex justify-between items-center">
+          <ul class="flex gap-[42px] items-center">
+            <li>
+              <a
+                href="privacy.html"
+                class="font-medium text-2xl tracking-[-0.05em] text-[#B0B0B0] hover:text-white transition-colors duration-300 ease-in-out"
+                >Privacy policy</a
+              >
+            </li>
+            <li>
+              <a
+                href="refund.html"
+                class="font-medium text-2xl tracking-[-0.05em] text-[#B0B0B0] hover:text-white transition-colors duration-300 ease-in-out"
+                >Refund policy</a
+              >
+            </li>
+          </ul>
+          <span class="font-medium text-2xl tracking-[-0.05em] text-[#B0B0B0]">
+            Email: afdsgsg@gmail.com
+          </span>
+        </div>
+      </footer>
     </div>
     <script src="./assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>

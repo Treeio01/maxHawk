@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MaxHAWK</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body class="bg-black w-full flex flex-col items-center overflow-x-hidden">
+    <div
+      class="flex absolute top-[361px] min-w-[1861px] min-h-[399px] left-1/2 -translate-x-1/2 bg-[#6B00C9] blur-[250px] rounded-full"
+    ></div>
+    <div
+      class="flex absolute top-[458px] min-w-[1351px] mix-blend-color-dodge min-h-[286px] left-1/2 -translate-x-1/2 bg-[#A53FFF] blur-[140px] rounded-full"
+    ></div>
+    <div
+      class="flex absolute top-[469px] min-w-[811px] mix-blend-soft-light min-h-[172px] left-1/2 -translate-x-1/2 bg-white blur-[120px] rounded-full"
+    ></div>
+    <img
+      src="./assets/img/grid.png"
+      class="absolute top-[233px] left-1/2 -translate-x-1/2 mix-blend-overlay"
+      alt=""
+    />
+    <img
+      src="./assets/img/why-this-work-1.png"
+      class="absolute top-[293px] left-0 mix-blend-color-dodge"
+      alt=""
+    />
+    <img
+      src="./assets/img/why-this-work-2.png"
+      class="absolute top-[357px] right-0 mix-blend-color-dodge"
+      alt=""
+    />
+    <div
+      id="mobileMenuContent"
+      class="flex flex-col gap-6 p-6 justify-start bg-black fixed right-[-100%] top-0 overflow-y-hidden transition-all duration-300 ease-in-out z-[111] w-[300px] h-full"
+    >
+      <div class="flex items-center gap-3">
+        <img src="./assets/img/logo.svg" alt="" />
+      </div>
+      <div id="mobileMenuClose" class="absolute top-7 right-7">
+        <svg
+          width="25px"
+          height="25px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="Menu / Close_MD">
+            <path
+              id="Vector"
+              d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18"
+              stroke="#000420"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </svg>
+      </div>
+      <ul id="headerListMobile" class="flex flex-col gap-2">
+        <li>
+          <a
+            href="about-course.html"
+            class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+            >O kursie</a
+          >
+        </li>
+        <li>
+          <a
+            href="why-this-work.html"
+            class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+            >Dlaczego to działa?</a
+          >
+        </li>
+        <li>
+          <a
+            href="FAQ.html"
+            class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+            >FAQ</a
+          >
+        </li>
+      </ul>
+
+      <button
+        class="py-2 px-8 hover:opacity-80 transition-opacity cursor-pointer duration-300 ease-in-out rounded-[18px] bg-gradient-to-b from-[#974BF8] to-[#AD7AFF] border-white/25 border shadow-[inset_0px_0px_13px_rgba(255,255,255,0.25)]"
+      >
+        <span class="text-white font-medium text-2xl tracking-[-0.05em]">
+          Kim jestem?
+        </span>
+      </button>
+    </div>
+    <div class="flex flex-col w-full max-w-[1384px] items-center mt-[69px]">
+      <header class="w-full flex justify-between items-center z-50">
+        <a href="/"><img src="./assets/img/logo.png" class="max-w-[126px]" alt="" /></a> 
+        <ul class="hidden lg:flex gap-6 items-center">
+          <li>
+            <a
+              href="about-course.html"
+              class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+              >O kursie</a
+            >
+          </li>
+          <li>
+            <a
+              href="why-this-work.html"
+              class="text-white font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+              >Dlaczego to działa?</a
+            >
+          </li>
+          <li>
+            <a
+              href="FAQ.html"
+              class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+              >FAQ</a
+            >
+          </li>
+        </ul>
+        <button onclick="window.location.href='about-author.html'"
+          class="hidden lg:flex py-2 px-8 hover:opacity-80 transition-opacity cursor-pointer duration-300 ease-in-out rounded-[18px] bg-gradient-to-b from-[#974BF8] to-[#AD7AFF] border-white/25 border shadow-[inset_0px_0px_13px_rgba(255,255,255,0.25)]"
+        >
+          <span class="text-white font-medium text-2xl tracking-[-0.05em]">
+            Kim jestem?
+          </span>
+        </button>
+        <button
+          id="mobileMenu"
+          class="flex lg:hidden cursor-pointer gap-4 z-40 p-1 rounded-[6px]"
+        >
+          <svg
+            width="40px"
+            height="40px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 6H20M4 12H20M4 18H20"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </header>
+
+      <section
+        class="flex flex-col mt-[101px] gap-[46px] items-center w-full z-50"
+      >
+        <div class="flex flex-col gap-8 items-center">
+          <h1
+            class="text-white leading-[120%] font-semibold text-[72px] text-center tracking-[-0.05em]"
+          >
+          Gotowy system biznesowy, który działa
+          </h1>
+          <span
+            class="text-[#B0B0B0] max-w-[569px] text-[28px] font-medium text-center tracking-[-0.05em]"
+          >
+          Pokazuję tylko to, co sam stosuję - zero teorii, tylko sprawdzone metody.
+          </span>
+          <button
+            class="hidden lg:flex py-4.5 px-[42px] hover:opacity-80 transition-opacity cursor-pointer duration-300 ease-in-out rounded-[28px] bg-gradient-to-b from-[#8525FF] to-[#B486FF] border-white/25 border shadow-[inset_0px_0px_13px_rgba(255,255,255,0.25)]"
+          >
+            <span class="text-white font-medium text-2xl tracking-[-0.05em]">
+              Odbierz dostęp
+            </span>
+          </button>
+        </div>
+      </section>
+      <section class="mt-[82px] flex flex-col gap-4.5 items-center z-40">
+        <span class="text-white font-medium text-[42px] tracking-[-0.05em]">
+          460 PLN
+        </span>
+        <span class="text-[#C0A5F9] text-[28px] font-medium tracking-[-0.05em]">
+          Więcej o systemie
+        </span>
+        <img src="./assets/img/arrow-down.svg" alt="" />
+      </section>
+      <section class="flex mt-[48px] flex-col items-center z-40 gap-[162px]">
+        <span class="text-white font-medium text-[42px] tracking-[-0.05em]">
+          Co otrzymujesz?
+        </span>
+        <div class="flex flex-wrap gap-6">
+          <div
+            class="flex relative max-w-[445px] flex-col gap-3 bg-[#0E0E0F] border border-[#2B2C34] rounded-[24px] px-[87px] pb-[61px] pt-[125px]"
+          >
+            <img
+              src="./assets/img/bubble.png"
+              class="absolute left-1/2 -translate-x-1/2 bottom-[185px]"
+              alt=""
+            />
+            <div class="flex flex-col gap-3 items-center max-w-[271px]">
+              <span
+                class="text-white text-center text-[24px] font-medium tracking-[-0.05em]"
+              >
+              Sprawdzone źródła pozyskiwania klientów
+              </span>
+              <span
+                class="text-[#B0B0B0] max-w-[260px] text-center text-lg tracking-[-0.05em]"
+              >
+              To nie teoria. To konkretne miejsca i sposób działania
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex relative max-w-[445px] flex-col gap-3 bg-[#0E0E0F] border border-[#2B2C34] rounded-[24px] px-[87px] pb-[61px] pt-[125px]"
+          >
+            <img
+              src="./assets/img/rocket.png"
+              class="absolute left-1/2 -translate-x-1/2 bottom-[185px]"
+              alt=""
+            />
+            <div class="flex flex-col gap-3 items-center max-w-[271px]">
+              <span
+                class="text-white text-center text-[24px] font-medium tracking-[-0.05em]"
+              >
+              Gotowy system 
+              zarabiania na delegowaniu
+              </span>
+              <span
+                class="text-[#B0B0B0] max-w-[260px] text-center text-lg tracking-[-0.05em]"
+              >
+              Od zamówienia do wykonania, cały system w jednym miejscu
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex relative max-w-[445px] flex-col gap-3 bg-[#0E0E0F] border border-[#2B2C34] rounded-[24px] px-[87px] pb-[61px] pt-[125px]"
+          >
+            <img
+              src="./assets/img/zoom.png"
+              class="absolute left-1/2 -translate-x-1/2 bottom-[185px]"
+              alt=""
+            />
+            <div class="flex flex-col gap-3 items-center max-w-[271px]">
+              <span
+                class="text-white text-center text-[24px] font-medium tracking-[-0.05em]"
+              >
+              Jak zbudować zespół wykonawców?
+              </span>
+              <span
+                class="text-[#B0B0B0] max-w-[260px] text-center text-lg tracking-[-0.05em]"
+              >
+              Gdzie szukać ludzi i jak nimi zarządzać
+              </span>
+            </div>
+          </div>
+          <div class="flex gap-[130px] mt-[82px] mb-[221px] items-center w-full">
+            <div class="flex flex-col gap-6">
+              <div
+                class="flex w-max p-3 bg-[#0E0E0F] rounded-[15px] border border-[#2B2C34]"
+              >
+                <img src="./assets/img/gift.png" alt="" />
+              </div>
+              <span
+                class="text-white font-medium text-[42px] tracking-[-0.05em]"
+              >
+              Bonusy na start
+              </span>
+              <span
+                class="text-[#B0B0B0] text-[28px] font-medium tracking-[-0.05em]"
+              >
+              Zamknięty czat, lista wykonawców, szablony, materiały. I mój kontakt — bezpośredni.
+              </span>
+            </div>
+            <div
+              class="flex relative w-full min-h-[350px] min-w-[680px] rounded-3xl bg-linear-to-b from-[#8601FC] to-[#1A132A] h-full"
+            >
+              <img
+                src="./assets/img/giftBox.png"
+                class="absolute left-1/2 z-10 -translate-x-1/2 bottom-[33px]"
+                alt=""
+              />
+              <img
+                src="./assets/img/star.svg"
+                class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      // Изначально скрываем все ответы
+      $(".faq-answer").hide();
+
+      // Обработчик клика на FAQ элемент
+      $(".faq-item").click(function () {
+        // Находим ответ внутри текущего элемента
+        const answer = $(this).find(".faq-answer");
+        const arrow = $(this).find(".faq-arrow");
+
+        // Переключаем видимость ответа
+        answer.slideToggle(300);
+
+        // Вращаем стрелку
+        arrow.toggleClass("rotate-180");
+
+        // Опционально: закрываем другие открытые FAQ
+        $(".faq-item").not(this).find(".faq-answer").slideUp(300);
+        $(".faq-item").not(this).find(".faq-arrow").removeClass("rotate-180");
+      });
+    </script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

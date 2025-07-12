@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MaxHAWK</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body class="bg-black w-full flex flex-col items-center overflow-x-hidden">
+    <div
+      class="flex absolute min-w-[1900px] min-h-[395px] bg-[#6B00C9] top-[464px] left-[-286px] blur-[300px]"
+    ></div>
+    <div
+      class="flex absolute min-w-[1339px] min-h-[284px] bg-[#A53FFF] top-[565px] left-[172px] mix-blend-color-dodge blur-[190px]"
+    ></div>
+    <div
+      class="flex absolute min-w-[804px] min-h-[170px] bg-white top-[576px] left-[469px] mix-blend-soft-light blur-[150px]"
+    ></div>
+    <div
+      class="flex absolute min-w-[985px] min-h-[159px] bg-[#D9D9D9] top-[379px] left-1/2 -translate-x-1/2 mix-blend-color-dodge blur-[110px]"
+    ></div>
+    <img
+      src="./assets/img/notebook.png"
+      class="absolute top-[217px] right-[171px] mix-blend-color-dodge"
+      alt=""
+    />
+    <img
+      src="./assets/img/travel.png"
+      class="absolute top-[519px] left-[89px] mix-blend-color-dodge"
+      alt=""
+    />
+    <div
+      id="mobileMenuContent"
+      class="flex flex-col gap-6 p-6 justify-start bg-black fixed right-[-100%] top-0 overflow-y-hidden transition-all duration-300 ease-in-out z-[111] w-[300px] h-full"
+    >
+      <div class="flex items-center gap-3">
+        <img src="./assets/img/logo.svg" alt="" />
+      </div>
+      <div id="mobileMenuClose" class="absolute top-7 right-7">
+        <svg
+          width="25px"
+          height="25px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="Menu / Close_MD">
+            <path
+              id="Vector"
+              d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18"
+              stroke="#000420"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </svg>
+      </div>
+      <ul id="headerListMobile" class="flex flex-col gap-2">
+        <li>
+          <a
+            href="about-course.html"
+            class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+            >O kursie</a
+          >
+        </li>
+        <li>
+          <a
+            href="why-this-work.html"
+            class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+            >Dlaczego to działa?</a
+          >
+        </li>
+        <li>
+          <a
+            href="FAQ.html"
+            class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+            >FAQ</a
+          >
+        </li>
+      </ul>
+
+      <button
+        class="py-2 px-8 hover:opacity-80 transition-opacity cursor-pointer duration-300 ease-in-out rounded-[18px] bg-gradient-to-b from-[#974BF8] to-[#AD7AFF] border-white/25 border shadow-[inset_0px_0px_13px_rgba(255,255,255,0.25)]"
+      >
+        <span class="text-white font-medium text-2xl tracking-[-0.05em]">
+          Kim jestem?
+        </span>
+      </button>
+    </div>
+    <div class="flex flex-col w-full max-w-[1384px] items-center mt-[69px]">
+      <header class="w-full flex justify-between items-center z-50">
+        <a href="/"
+          ><img src="./assets/img/logo.png" class="max-w-[126px]" alt=""
+        /></a>
+        <ul class="hidden lg:flex gap-6 items-center">
+          <li>
+            <a
+              href="about-course.html"
+              class="text-white font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+              >O kursie</a
+            >
+          </li>
+          <li>
+            <a
+              href="why-this-work.html"
+              class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+              >Dlaczego to działa?</a
+            >
+          </li>
+          <li>
+            <a
+              href="FAQ.html"
+              class="text-[#ACB6BF] font-medium text-2xl tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+              >FAQ</a
+            >
+          </li>
+        </ul>
+        <button
+          onclick="window.location.href='about-author.html'"
+          class="hidden lg:flex py-2 px-8 hover:opacity-80 transition-opacity cursor-pointer duration-300 ease-in-out rounded-[18px] bg-gradient-to-b from-[#974BF8] to-[#AD7AFF] border-white/25 border shadow-[inset_0px_0px_13px_rgba(255,255,255,0.25)]"
+        >
+          <span class="text-white font-medium text-2xl tracking-[-0.05em]">
+            Kim jestem?
+          </span>
+        </button>
+        <button
+          id="mobileMenu"
+          class="flex lg:hidden cursor-pointer gap-4 z-40 p-1 rounded-[6px]"
+        >
+          <svg
+            width="40px"
+            height="40px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 6H20M4 12H20M4 18H20"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </header>
+
+      <section
+        class="flex flex-col mt-[55px] gap-[46px] items-center w-full z-50"
+      >
+        <div class="flex flex-col gap-9 items-center max-w-[943px]">
+          <h1
+            class="font-semibold text-[72px] tracking-[-0.05em] bg-clip-text text-transparent bg-linear-to-b from-white to-[#BE73FF]"
+          >
+            O autorze
+          </h1>
+        </div>
+        <div
+          class="flex bg-white/10 border backdrop-blur-[15px] border-white/50 rounded-[32px] p-4 w-full"
+        >
+          <div
+            class="flex flex-col gap-[19px] bg-[#0E0E0F]/20 rounded-[18px] p-[42px] w-full"
+          >
+            <div
+              class="flex w-max p-3 bg-[#0E0E0F] rounded-[15px] border border-[#2B2C34]"
+            >
+              <img src="./assets/img/gift.png" alt="" />
+            </div>
+            <span class="text-white font-medium tracking-[-0.05em] text-[28px]">
+              Nazywam się Max Hawk. Jestem zwykłym gościem, który zbudował dla
+              siebie prosty i autonomiczny biznes oparty na delegowaniu usług —
+              w moim przypadku to montaż wideo, 3D i design, ale ten model łatwo
+              przenieść na każdą inną branżę usługową.<br />
+              <br />
+              Lubię tematykę wideo i grafiki, więc działam akurat w tej
+              niszy.<br />Ale tu nie chodzi o to, co konkretnie oferujesz. Liczy
+              się system.<br />
+              <br />
+              Nie jestem żadnym geniuszem z wyjątkowym doświadczeniem. Po prostu
+              zrozumiałem, jak to wszystko sensownie poukładać: jak szukać
+              zleceń, dobierać wykonawców i zarządzać całością.<br />
+              <br />Do dochodu na poziomie 6–7 tys. dolarów miesięcznie
+              doszedłem szybko i trzymam ten poziom dzięki dobrze ułożonemu
+              systemowi bez ciągłej gonitwy i wypalenia.<br />
+              <br />
+              Dziś wszystko działa prosto: mam kilku sprawdzonych wykonawców,
+              przejrzysty sposób pozyskiwania klientów i jasną strukturę
+              współpracy. To nie są żadne „sekretne techniki”, tylko powtarzalny
+              model, który może wdrożyć każdy, kto chce działać. Меня зовут Max
+              Hawk.
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex gap-[57px] mt-[82px] mb-[221px] items-center w-full">
+        <div class="flex flex-col gap-6">
+          <div
+            class="flex w-max p-3 bg-[#0E0E0F] rounded-[15px] border border-[#2B2C34]"
+          >
+            <img src="./assets/img/folder.svg" alt="" />
+          </div>
+          <span class="text-white font-medium text-[42px] tracking-[-0.05em]">
+            Przez mój zespół zrealizowaliśmy ponad 1000 unikalnych projektów. Od
+            prostych rolek po rozbudowane wizualizacje 3D dla firm. Każde
+            zlecenie przeszło przez mój systemm, od zapytania do wyniku.
+          </span>
+        </div>
+
+        <div
+          id="slider"
+          class="relative w-full min-h-[390px] min-w-[654px] max-w-[690px] rounded-3xl bg-[#151520]/70 border border-[#2B2C34] h-full overflow-hidden"
+        >
+          <!-- Swiper -->
+          <div class="swiper h-full w-full">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div
+                class="swiper-slide flex items-center justify-center text-white text-xl"
+              >
+                <img src="./assets/img/about-1.png" alt="" />
+              </div>
+              <div
+                class="swiper-slide flex items-center justify-center text-white text-xl"
+              >
+                <img src="./assets/img/about-2.png" alt="" />
+              </div>
+              <div
+                class="swiper-slide flex items-center justify-center text-white text-xl"
+              >
+                <img src="./assets/img/about-3.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <button
+            id="prev"
+            class="absolute top-1/2 -translate-y-1/2 left-[32px] z-10"
+          >
+            <img src="./assets/img/left.svg" alt="Prev" />
+          </button>
+          <button
+            id="next"
+            class="absolute top-1/2 -translate-y-1/2 right-[32px] z-10"
+          >
+            <img src="./assets/img/right.svg" alt="Next" />
+          </button>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Init Swiper -->
+        <script>
+          const swiper = new Swiper(".swiper", {
+            loop: true,
+            navigation: {
+              nextEl: "#next",
+              prevEl: "#prev",
+            },
+          });
+        </script>
+      </section>
+
+      <section
+        class="flex flex-col mt-[55px] min-w-[1518px] gap-[46px] items-center w-full z-50"
+      >
+        <div class="flex flex-col gap-[62px] w-full items-center">
+          <span class="text-white font-medium text-[42px] tracking-[-0.05em]">
+            Opinie klientów, dla których realizowałem projekty
+          </span>
+          <div class="flex justify-center items-center relative w-full">
+            <img
+              src="./assets/img/left.svg"
+              class="arrow-left cursor-pointer absolute left-[470px] top-1/2 -translate-y-1/2 z-30"
+              alt=""
+            />
+            <img
+              src="./assets/img/right.svg"
+              class="arrow-right cursor-pointer absolute right-[470px] top-1/2 -translate-y-1/2 z-30"
+              alt=""
+            />
+            <div
+              class="flex reviews-wrapper relative w-full justify-center items-start"
+            >
+              <div
+                class="review-item flex flex-col gap-3 p-6 w-full max-w-[446px] bg-[#0E0E0F] rounded-[18px] border border-[#2B2C34]"
+              >
+                <div class="flex items-center gap-[7px]">
+                  <img
+                    src="./assets/img/avatar-1.png"
+                    class="rounded-full"
+                    alt=""
+                  />
+                  <span
+                    class="text-[24px] font-medium text-white tracking-[-0.05em]"
+                  >
+                    Alex
+                  </span>
+                </div>
+                <span
+                  class="text-[#B0B0B0] font-SF leading-[22px] font-medium text-lg tracking-[-0.05em]"
+                >
+                  Проделал прекрасную работу, а главное быстро и качественно.
+                  Предложил свою идею по цветовой гамме, которая мне очень
+                  зашла. Как итог - красивая работа, которая радует глаз. Всем
+                  советую)
+                </span>
+              </div>
+
+              <div
+                class="review-item flex absolute left-0 opacity-25 flex-col gap-3 p-6 w-full max-w-[446px] bg-[#0E0E0F] rounded-[18px] border border-[#2B2C34]"
+              >
+                <div class="flex items-center gap-[7px]">
+                  <img
+                    src="./assets/img/avatar-1.png"
+                    class="rounded-full"
+                    alt=""
+                  />
+                  <span
+                    class="text-[24px] font-medium text-white tracking-[-0.05em]"
+                  >
+                    Alex
+                  </span>
+                </div>
+                <span
+                  class="text-[#B0B0B0] font-SF leading-[22px] font-medium text-lg tracking-[-0.05em]"
+                >
+                  Проделал прекрасную работу, а главное быстро и качественно.
+                  Предложил свою идею по цветовой гамме, которая мне очень
+                  зашла. Как итог - красивая работа, которая радует глаз. Всем
+                  советую)
+                </span>
+              </div>
+
+              <div
+                class="review-item flex absolute flex-col right-0 opacity-25 gap-3 p-6 w-full max-w-[446px] bg-[#0E0E0F] rounded-[18px] border border-[#2B2C34]"
+              >
+                <div class="flex items-center gap-[7px]">
+                  <img
+                    src="./assets/img/avatar-1.png"
+                    class="rounded-full"
+                    alt=""
+                  />
+                  <span
+                    class="text-[24px] font-medium text-white tracking-[-0.05em]"
+                  >
+                    Alex
+                  </span>
+                </div>
+                <span
+                  class="text-[#B0B0B0] font-SF leading-[22px] font-medium text-lg tracking-[-0.05em]"
+                >
+                  Проделал прекрасную работу, а главное быстро и качественно.
+                  Предложил свою идею по цветовой гамме, которая мне очень
+                  зашла. Как итог - красивая работа, которая радует глаз. Всем
+                  советую)
+                </span>
+              </div>
+            </div>
+          </div>
+          <script>
+            const reviews = [
+              {
+                name: "Alex",
+                text: "Проделал прекрасную работу, а главное быстро и качественно...",
+              },
+              {
+                name: "Alex1",
+                text: "Всё отлично, быстро и красиво. Рекомендую!",
+              },
+              {
+                name: "Alex2",
+                text: "Крутая работа! Очень понравился подход и скорость!",
+              },
+              {
+                name: "Alex5",
+                text: "Очень доволен результатом. Буду обращаться ещё!",
+              },
+            ];
+
+            let currentIndex = 0;
+
+            const renderSlides = () => {
+              const wrapper = document.querySelector(".reviews-wrapper");
+              wrapper.innerHTML = "";
+
+              const getSlide = (index, positionClass, opacity) => {
+                const review = reviews[index];
+                return `
+                  <div class="review-item ${positionClass} ${opacity} flex flex-col gap-3 p-6 w-full max-w-[446px] bg-[#0E0E0F] rounded-[18px] border border-[#2B2C34]">
+                    <div class="flex items-center gap-[7px]">
+                      <img src="./assets/img/avatar-1.png" class="rounded-full" alt="" />
+                      <span class="text-[24px] font-medium text-white tracking-[-0.05em]">${review.name}</span>
+                    </div>
+                    <span class="text-[#B0B0B0] font-SF leading-[22px] font-medium text-lg tracking-[-0.05em]">
+                      ${review.text}
+                    </span>
+                  </div>`;
+              };
+
+              const prev = (currentIndex - 1 + reviews.length) % reviews.length;
+              const next = (currentIndex + 1) % reviews.length;
+
+              wrapper.innerHTML += getSlide(
+                prev,
+                "absolute left-0",
+                "opacity-25"
+              );
+              wrapper.innerHTML += getSlide(currentIndex, "z-20 relative", "");
+              wrapper.innerHTML += getSlide(
+                next,
+                "absolute right-0",
+                "opacity-25"
+              );
+            };
+
+            document
+              .querySelector(".arrow-left")
+              .addEventListener("click", () => {
+                currentIndex =
+                  (currentIndex - 1 + reviews.length) % reviews.length;
+                renderSlides();
+              });
+
+            document
+              .querySelector(".arrow-right")
+              .addEventListener("click", () => {
+                currentIndex = (currentIndex + 1) % reviews.length;
+                renderSlides();
+              });
+
+            renderSlides();
+          </script>
+        </div>
+      </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      // Изначально скрываем все ответы
+      $(".faq-answer").hide();
+
+      // Обработчик клика на FAQ элемент
+      $(".faq-item").click(function () {
+        // Находим ответ внутри текущего элемента
+        const answer = $(this).find(".faq-answer");
+        const arrow = $(this).find(".faq-arrow");
+
+        // Переключаем видимость ответа
+        answer.slideToggle(300);
+
+        // Вращаем стрелку
+        arrow.toggleClass("rotate-180");
+
+        // Опционально: закрываем другие открытые FAQ
+        $(".faq-item").not(this).find(".faq-answer").slideUp(300);
+        $(".faq-item").not(this).find(".faq-arrow").removeClass("rotate-180");
+      });
+    </script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
