@@ -63,13 +63,7 @@
               >Dlaczego to działa?</a
             >
           </li>
-          <li>
-            <a
-              href="FAQ.html"
-              class="text-[#ACB6BF] font-medium text-[8px] md:text-lg tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
-              >FAQ</a
-            >
-          </li>
+          
         </ul>
         <button
           onclick="window.location.href='about-author.html'"
@@ -226,28 +220,6 @@
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script>
-      // Изначально скрываем все ответы
-      $(".faq-answer").hide();
-
-      // Обработчик клика на FAQ элемент
-      $(".faq-item").click(function () {
-        // Находим ответ внутри текущего элемента
-        const answer = $(this).find(".faq-answer");
-        const arrow = $(this).find(".faq-arrow");
-
-        // Переключаем видимость ответа
-        answer.slideToggle(300);
-
-        // Вращаем стрелку
-        arrow.toggleClass("rotate-180");
-
-        // Опционально: закрываем другие открытые FAQ
-        $(".faq-item").not(this).find(".faq-answer").slideUp(300);
-        $(".faq-item").not(this).find(".faq-arrow").removeClass("rotate-180");
-      });
-    </script>
-    <script src="./assets/js/script.js"></script>
+   
   </body>
 </html>
