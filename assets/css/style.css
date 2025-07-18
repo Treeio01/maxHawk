@@ -179,6 +179,9 @@
   }
 }
 @layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
+  }
   .absolute {
     position: absolute;
   }
@@ -332,6 +335,15 @@
   .z-50 {
     z-index: 50;
   }
+  .z-\[-1\] {
+    z-index: -1;
+  }
+  .z-\[-2\] {
+    z-index: -2;
+  }
+  .z-\[-3\] {
+    z-index: -3;
+  }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
   }
@@ -391,6 +403,15 @@
   }
   .h-\[1px\] {
     height: 1px;
+  }
+  .h-\[172px\] {
+    height: 172px;
+  }
+  .h-\[286px\] {
+    height: 286px;
+  }
+  .h-\[399px\] {
+    height: 399px;
   }
   .h-\[506px\] {
     height: 506px;
@@ -461,9 +482,6 @@
   .min-h-\[395px\] {
     min-height: 395px;
   }
-  .min-h-\[399px\] {
-    min-height: 399px;
-  }
   .min-h-\[400px\] {
     min-height: 400px;
   }
@@ -476,8 +494,17 @@
   .w-\[2px\] {
     width: 2px;
   }
+  .w-\[70\%\] {
+    width: 70%;
+  }
   .w-\[77px\] {
     width: 77px;
+  }
+  .w-\[90\%\] {
+    width: 90%;
+  }
+  .w-\[120\%\] {
+    width: 120%;
   }
   .w-\[508px\] {
     width: 508px;
@@ -584,11 +611,20 @@
   .max-w-\[805px\] {
     max-width: 805px;
   }
+  .max-w-\[811px\] {
+    max-width: 811px;
+  }
   .max-w-\[943px\] {
     max-width: 943px;
   }
   .max-w-\[1032px\] {
     max-width: 1032px;
+  }
+  .max-w-\[1351px\] {
+    max-width: 1351px;
+  }
+  .max-w-\[1861px\] {
+    max-width: 1861px;
   }
   .min-w-\[32px\] {
     min-width: 32px;
@@ -647,9 +683,6 @@
   .min-w-\[1442px\] {
     min-width: 1442px;
   }
-  .min-w-\[1861px\] {
-    min-width: 1861px;
-  }
   .min-w-\[1900px\] {
     min-width: 1900px;
   }
@@ -681,6 +714,9 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .transform-gpu {
+    transform: translateZ(0) var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
@@ -1246,6 +1282,12 @@
   .opacity-25 {
     opacity: 25%;
   }
+  .opacity-30 {
+    opacity: 30%;
+  }
+  .opacity-40 {
+    opacity: 40%;
+  }
   .mix-blend-color-dodge {
     mix-blend-mode: color-dodge;
   }
@@ -1348,6 +1390,9 @@
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
+  }
+  .will-change-transform {
+    will-change: transform;
   }
   .outline-none {
     --tw-outline-style: none;
