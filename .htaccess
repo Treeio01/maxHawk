@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Убираем .html из URL
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+?)/?$ $1.html [L]
+
+# Если нужно, чтобы работали и вложенные страницы (например, /folder/page)
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
