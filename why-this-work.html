@@ -32,18 +32,21 @@
     />
     <img
       src="./assets/img/why-this-work-1.png"
-      class="absolute top-[293px] left-0 mix-blend-color-dodge"
+      class="absolute top-[293px] left-[340px] z-30 mix-blend-color-dodge max-w-[400px]"
       alt=""
     />
     <img
       src="./assets/img/why-this-work-2.png"
-      class="absolute top-[357px] right-0 mix-blend-color-dodge"
+      class="absolute top-[357px] right-[340px] z-30 mix-blend-color-dodge max-w-[400px]"
       alt=""
     />
-    <div class="flex flex-col w-full max-w-[1384px] items-center mt-[69px]">
+    <div class="flex flex-col w-full max-w-[375px] md:max-w-[1032px] items-center mt-[52px] md:mt-[82px]">
       <header class="w-full flex justify-between items-center">
         <a href="/"
-          ><img src="./assets/img/logo.png" class="max-w-[52px] md:max-w-[126px]" alt=""
+          ><img
+            src="./assets/img/logo.png"
+            class="max-w-[52px] md:max-w-[126px]"
+            alt=""
         /></a>
         <ul class="flex gap-6 items-center">
           <li>
@@ -72,150 +75,156 @@
           onclick="window.location.href='about-author.html'"
           class="flex py-2 px-6 md:px-8 hover:opacity-80 transition-opacity cursor-pointer duration-300 ease-in-out rounded-[18px] bg-gradient-to-b from-[#974BF8] to-[#AD7AFF] border-white/25 border shadow-[inset_0px_0px_13px_rgba(255,255,255,0.25)]"
         >
-          <span class="text-white font-medium text-[8px] md:text-lg tracking-[-0.05em]">
+          <span
+            class="text-white font-medium text-[8px] md:text-lg tracking-[-0.05em]"
+          >
             Kim jestem?
           </span>
         </button>
       </header>
 
       <section
-        class="flex flex-col mt-[101px] gap-[46px] items-center w-full z-50"
+        class="flex flex-col mt-[28px] md:mt-[52px] gap-[46px] items-center w-full z-50"
       >
-        <div class="flex flex-col gap-8 items-center">
+        <div class="flex flex-col gap-[28px] md:gap-8 items-center">
           <h1
-            class="text-white leading-[120%] font-semibold text-[72px] text-center tracking-[-0.05em]"
+            class="text-white leading-[120%] max-w-[335px] md:max-w-full font-semibold text-[32px] md:text-[42px] text-center tracking-[-0.05em]"
           >
-          Gotowy system biznesowy, który działa
+            Gotowy system biznesowy, który działa
           </h1>
           <span
-            class="text-[#B0B0B0] max-w-[569px] text-[28px] font-medium text-center tracking-[-0.05em]"
+            class="text-[#B0B0B0] max-w-[224px] md:max-w-[569px] text-[12px] md:text-[20px] font-medium text-center tracking-[-0.05em]"
           >
-          Pokazuję tylko to, co sam stosuję - zero teorii, tylko sprawdzone metody.
+            Pokazuję tylko to, co sam stosuję - zero teorii, tylko sprawdzone
+            metody.
           </span>
           <button
-            class="hidden lg:flex py-4.5 px-[42px] hover:opacity-80 transition-opacity cursor-pointer duration-300 ease-in-out rounded-[28px] bg-gradient-to-b from-[#8525FF] to-[#B486FF] border-white/25 border shadow-[inset_0px_0px_13px_rgba(255,255,255,0.25)]"
+            class="flex py-2 md:py-4.5 px-6 md:px-[42px] hover:opacity-80 transition-opacity cursor-pointer duration-300 ease-in-out rounded-[28px] bg-gradient-to-b from-[#8525FF] to-[#B486FF] border-white/25 border shadow-[inset_0px_0px_13px_rgba(255,255,255,0.25)]"
           >
-            <span class="text-white font-medium text-2xl tracking-[-0.05em]">
+            <span class="text-white font-medium text-[12px] md:text-[20px] tracking-[-0.05em]">
               Odbierz dostęp
             </span>
           </button>
         </div>
       </section>
-      <section class="mt-[82px] flex flex-col gap-4.5 items-center z-40">
-        <span class="text-white font-medium text-[42px] tracking-[-0.05em]">
+      <section class="mt-[48px] hidden md:flex flex-col gap-4.5 items-center z-40">
+        <span class="text-white font-medium text-[27px] tracking-[-0.05em]">
           460 PLN
         </span>
-        <span class="text-[#C0A5F9] text-[28px] font-medium tracking-[-0.05em]">
+        <span class="text-[#C0A5F9] text-[20px] font-medium tracking-[-0.05em]">
           Więcej o systemie
         </span>
-        <img src="./assets/img/arrow-down.svg" alt="" />
+        <img
+          src="./assets/img/arrow-down.svg"
+          class="max-w-[36px] max-h-[36px]"
+          alt=""
+        />
       </section>
-      <section class="flex mt-[48px] flex-col items-center z-40 gap-[162px]">
-        <span class="text-white font-medium text-[42px] tracking-[-0.05em]">
+      <section class="flex mt-[48px] flex-col items-center z-40 gap-[88px] md:gap-[120px]">
+        <span class="text-white font-medium text-[28px] tracking-[-0.05em]">
           Co otrzymujesz?
         </span>
-        <div class="flex flex-wrap gap-6">
+        <div class="flex flex-wrap gap-[52px] md:gap-4 justify-center">
           <div
-            class="flex relative max-w-[445px] flex-col gap-3 bg-[#0E0E0F] border border-[#2B2C34] rounded-[24px] px-[87px] pb-[61px] pt-[125px]"
+            class="flex relative max-w-[331px] flex-col gap-3 bg-[#0E0E0F] border border-[#2B2C34] rounded-[24px] px-[39px] md:px-[68px] pb-[21px] md:pb-[44px] pt-[110px] md:pt-[150px]"
           >
             <img
               src="./assets/img/bubble.png"
-              class="absolute left-1/2 -translate-x-1/2 bottom-[185px]"
+              class="absolute left-1/2 -translate-x-1/2 bottom-[110px] md:bottom-[185px] max-w-[218px] md:max-w-[202px]"
               alt=""
             />
             <div class="flex flex-col gap-3 items-center max-w-[271px]">
               <span
-                class="text-white text-center text-[24px] font-medium tracking-[-0.05em]"
+                class="text-white text-center text-[20px] font-medium tracking-[-0.05em]"
               >
-              Sprawdzone źródła pozyskiwania klientów
+                Sprawdzone źródła pozyskiwania klientów
               </span>
               <span
-                class="text-[#B0B0B0] max-w-[260px] text-center text-lg tracking-[-0.05em]"
+                class="text-[#B0B0B0] max-w-[260px] text-center text-[12px] tracking-[-0.05em]"
               >
-              To nie teoria. To konkretne miejsca i sposób działania
+                To nie teoria. To konkretne miejsca i sposób działania
               </span>
             </div>
           </div>
 
           <div
-            class="flex relative max-w-[445px] flex-col gap-3 bg-[#0E0E0F] border border-[#2B2C34] rounded-[24px] px-[87px] pb-[61px] pt-[125px]"
+            class="flex relative max-w-[331px] flex-col gap-3 bg-[#0E0E0F] border border-[#2B2C34] rounded-[24px] px-[39px] md:px-[68px] pb-[21px] md:pb-[44px] pt-[110px] md:pt-[150px]"
           >
             <img
               src="./assets/img/rocket.png"
-              class="absolute left-1/2 -translate-x-1/2 bottom-[185px]"
+              class="absolute left-1/2 -translate-x-1/2 bottom-[110px] md:bottom-[185px] max-w-[202px]"
               alt=""
             />
             <div class="flex flex-col gap-3 items-center max-w-[271px]">
               <span
-                class="text-white text-center text-[24px] font-medium tracking-[-0.05em]"
+                class="text-white text-center text-[20px] font-medium tracking-[-0.05em]"
               >
-              Gotowy system 
-              zarabiania na delegowaniu
+                Gotowy system zarabiania na delegowaniu
               </span>
               <span
-                class="text-[#B0B0B0] max-w-[260px] text-center text-lg tracking-[-0.05em]"
+                class="text-[#B0B0B0] max-w-[260px] text-center text-[12px] tracking-[-0.05em]"
               >
-              Od zamówienia do wykonania, cały system w jednym miejscu
+                Od zamówienia do wykonania, cały system w jednym miejscu
               </span>
             </div>
           </div>
 
           <div
-            class="flex relative max-w-[445px] flex-col gap-3 bg-[#0E0E0F] border border-[#2B2C34] rounded-[24px] px-[87px] pb-[61px] pt-[125px]"
+            class="flex relative max-w-[331px] flex-col gap-3 bg-[#0E0E0F] border border-[#2B2C34] rounded-[24px] px-[39px] md:px-[68px] pb-[21px] md:pb-[44px] pt-[110px] md:pt-[150px]"
           >
             <img
               src="./assets/img/zoom.png"
-              class="absolute left-1/2 -translate-x-1/2 bottom-[185px]"
+              class="absolute left-1/2 -translate-x-1/2 bottom-[110px] md:bottom-[185px] max-w-[202px]"
               alt=""
             />
             <div class="flex flex-col gap-3 items-center max-w-[271px]">
               <span
-                class="text-white text-center text-[24px] font-medium tracking-[-0.05em]"
+                class="text-white text-center text-[20px] font-medium tracking-[-0.05em]"
               >
-              Jak zbudować zespół wykonawców?
+                Jak zbudować zespół wykonawców?
               </span>
               <span
-                class="text-[#B0B0B0] max-w-[260px] text-center text-lg tracking-[-0.05em]"
+                class="text-[#B0B0B0] max-w-[260px] text-center text-[12px] tracking-[-0.05em]"
               >
-              Gdzie szukać ludzi i jak nimi zarządzać
+                Gdzie szukać ludzi i jak nimi zarządzać
               </span>
-            </div>
-          </div>
-          <div class="flex gap-[130px] mt-[82px] mb-[221px] items-center w-full">
-            <div class="flex flex-col gap-6">
-              <div
-                class="flex w-max p-3 bg-[#0E0E0F] rounded-[15px] border border-[#2B2C34]"
-              >
-                <img src="./assets/img/gift.png" alt="" />
-              </div>
-              <span
-                class="text-white font-medium text-[42px] tracking-[-0.05em]"
-              >
-              Bonusy na start
-              </span>
-              <span
-                class="text-[#B0B0B0] text-[28px] font-medium tracking-[-0.05em]"
-              >
-              Zamknięty czat, lista wykonawców, szablony, materiały. I mój kontakt — bezpośredni.
-              </span>
-            </div>
-            <div
-              class="flex relative w-full min-h-[350px] min-w-[680px] rounded-3xl bg-linear-to-b from-[#8601FC] to-[#1A132A] h-full"
-            >
-              <img
-                src="./assets/img/giftBox.png"
-                class="absolute left-1/2 z-10 -translate-x-1/2 bottom-[33px]"
-                alt=""
-              />
-              <img
-                src="./assets/img/star.svg"
-                class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
-                alt=""
-              />
             </div>
           </div>
         </div>
       </section>
+
+      <div class="flex md:flex-row flex-col gap-[40px] md:gap-[130px] mt-[28px] md:mt-[82px] mb-[50px] md:mb-[221px] items-center w-full">
+        <div class="flex flex-col items-center md:items-start gap-3 md:gap-4">
+          <div
+            class="hidden md:flex w-max p-3 bg-[#0E0E0F] rounded-[15px] border border-[#2B2C34]"
+          >
+            <img src="./assets/img/gift.png" class="max-w-[30px] max-h-[30px]" alt="" />
+          </div>
+          <span class="text-white font-medium text-[20px] md:text-[32px] tracking-[-0.05em]">
+            Bonusy na start
+          </span>
+          <span
+            class="text-[#B0B0B0] max-w-[295px] md:max-w-full md:text-left text-center  text-[12px] md:text-[18px] font-medium tracking-[-0.05em]"
+          >
+            Zamknięty czat, lista wykonawców, szablony, materiały. I mój kontakt
+            — bezpośredni.
+          </span>
+        </div>
+        <div
+          class="flex relative min-h-[195px]  md:min-h-[263px] w-full max-w-[507px] rounded-3xl bg-linear-to-b from-[#8601FC] to-[#1A132A] h-full"
+        >
+          <img
+            src="./assets/img/giftBox.png"
+            class="absolute left-1/2 z-10 -translate-x-1/2 bottom-[10px] md:bottom-[33px] max-w-[235px] md:max-w-[287px]"
+            alt=""
+          />
+          <img
+            src="./assets/img/star.svg"
+            class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 max-w-[300px] md:max-w-[405px]"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
