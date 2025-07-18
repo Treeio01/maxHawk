@@ -11,20 +11,30 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body class="bg-black w-full flex flex-col items-center overflow-x-hidden">
+    <!-- Первый блок -->
     <div
-      class="flex absolute top-[361px] min-w-[1861px] min-h-[399px] left-1/2 -translate-x-1/2 bg-[#6B00C9] blur-[250px] rounded-full"
+      class="pointer-events-none z-[-3] absolute top-[361px] left-1/2 -translate-x-1/2 w-[120%] max-w-[1861px] h-[399px] bg-[#6B00C9] opacity-30 rounded-full blur-[250px] will-change-transform transform-gpu"
     ></div>
+
+    <!-- Второй блок -->
     <div
-      class="flex absolute top-[458px] min-w-[1351px] mix-blend-color-dodge min-h-[286px] left-1/2 -translate-x-1/2 bg-[#A53FFF] blur-[140px] rounded-full"
+      class="pointer-events-none z-[-2] absolute top-[458px] left-1/2 -translate-x-1/2 w-[90%] max-w-[1351px] h-[286px] bg-[#A53FFF] opacity-40 rounded-full blur-[140px] mix-blend-color-dodge will-change-transform transform-gpu"
     ></div>
+
+    <!-- Третий блок -->
     <div
-      class="flex absolute top-[469px] min-w-[811px] mix-blend-soft-light min-h-[172px] left-1/2 -translate-x-1/2 bg-white blur-[120px] rounded-full"
+      class="pointer-events-none z-[-1] absolute top-[469px] left-1/2 -translate-x-1/2 w-[70%] max-w-[811px] h-[172px] bg-white opacity-30 rounded-full blur-[120px] mix-blend-soft-light will-change-transform transform-gpu"
     ></div>
+
     <img
       src="./assets/img/grid.png"
       class="absolute top-[233px] left-1/2 -translate-x-1/2 mix-blend-overlay"
@@ -40,7 +50,9 @@
       class="absolute top-[357px] right-[340px] z-30 mix-blend-color-dodge max-w-[400px]"
       alt=""
     />
-    <div class="flex flex-col w-full max-w-[375px] md:max-w-[1032px] items-center mt-[52px] md:mt-[82px]">
+    <div
+      class="flex flex-col w-full max-w-[375px] md:max-w-[1032px] items-center mt-[52px] md:mt-[82px]"
+    >
       <header class="w-full flex justify-between items-center">
         <a href="/"
           ><img
@@ -70,7 +82,6 @@
               >FAQ</a
             >
           </li>
-          
         </ul>
         <button
           onclick="window.location.href='about-author.html'"
@@ -99,16 +110,21 @@
             Pokazuję tylko to, co sam stosuję - zero teorii, tylko sprawdzone
             metody.
           </span>
-          <button onclick="window.location.href='payment.html'"
+          <button
+            onclick="window.location.href='payment.html'"
             class="flex py-2 md:py-4.5 px-6 md:px-[42px] hover:opacity-80 transition-opacity cursor-pointer duration-300 ease-in-out rounded-[28px] bg-gradient-to-b from-[#8525FF] to-[#B486FF] border-white/25 border shadow-[inset_0px_0px_13px_rgba(255,255,255,0.25)]"
           >
-            <span class="text-white font-medium text-[12px] md:text-[20px] tracking-[-0.05em]">
+            <span
+              class="text-white font-medium text-[12px] md:text-[20px] tracking-[-0.05em]"
+            >
               Odbierz dostęp
             </span>
           </button>
         </div>
       </section>
-      <section class="mt-[48px] hidden md:flex flex-col gap-4.5 items-center z-40">
+      <section
+        class="mt-[48px] hidden md:flex flex-col gap-4.5 items-center z-40"
+      >
         <span class="text-white font-medium text-[27px] tracking-[-0.05em]">
           460 PLN
         </span>
@@ -121,7 +137,9 @@
           alt=""
         />
       </section>
-      <section class="flex mt-[48px] flex-col items-center z-40 gap-[88px] md:gap-[120px]">
+      <section
+        class="flex mt-[48px] flex-col items-center z-40 gap-[88px] md:gap-[120px]"
+      >
         <span class="text-white font-medium text-[28px] tracking-[-0.05em]">
           Co otrzymujesz?
         </span>
@@ -194,25 +212,33 @@
         </div>
       </section>
 
-      <div class="flex md:flex-row flex-col gap-[40px] md:gap-[130px] mt-[28px] md:mt-[82px] mb-[50px] md:mb-[221px] items-center w-full">
+      <div
+        class="flex md:flex-row flex-col gap-[40px] md:gap-[130px] mt-[28px] md:mt-[82px] mb-[50px] md:mb-[221px] items-center w-full"
+      >
         <div class="flex flex-col items-center md:items-start gap-3 md:gap-4">
           <div
             class="hidden md:flex w-max p-3 bg-[#0E0E0F] rounded-[15px] border border-[#2B2C34]"
           >
-            <img src="./assets/img/gift.png" class="max-w-[30px] max-h-[30px]" alt="" />
+            <img
+              src="./assets/img/gift.png"
+              class="max-w-[30px] max-h-[30px]"
+              alt=""
+            />
           </div>
-          <span class="text-white font-medium text-[20px] md:text-[32px] tracking-[-0.05em]">
+          <span
+            class="text-white font-medium text-[20px] md:text-[32px] tracking-[-0.05em]"
+          >
             Bonusy na start
           </span>
           <span
-            class="text-[#B0B0B0] max-w-[295px] md:max-w-full md:text-left text-center  text-[12px] md:text-[18px] font-medium tracking-[-0.05em]"
+            class="text-[#B0B0B0] max-w-[295px] md:max-w-full md:text-left text-center text-[12px] md:text-[18px] font-medium tracking-[-0.05em]"
           >
             Zamknięty czat, lista wykonawców, szablony, materiały. I mój kontakt
             — bezpośredni.
           </span>
         </div>
         <div
-          class="flex relative min-h-[195px]  md:min-h-[263px] w-full max-w-[507px] rounded-3xl bg-linear-to-b from-[#8601FC] to-[#1A132A] h-full"
+          class="flex relative min-h-[195px] md:min-h-[263px] w-full max-w-[507px] rounded-3xl bg-linear-to-b from-[#8601FC] to-[#1A132A] h-full"
         >
           <img
             src="./assets/img/giftBox.png"
@@ -227,6 +253,5 @@
         </div>
       </div>
     </div>
-   
   </body>
 </html>
