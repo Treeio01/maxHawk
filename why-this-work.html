@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MaxHAWK</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body class="bg-black w-full flex flex-col items-center overflow-x-hidden">
+    <div
+      class="flex absolute top-[361px] min-w-[1861px] min-h-[399px] left-1/2 -translate-x-1/2 bg-[#6B00C9] blur-[250px] rounded-full"
+    ></div>
+    <div
+      class="flex absolute top-[458px] min-w-[1351px] mix-blend-screen min-h-[286px] left-1/2 -translate-x-1/2 bg-[#A53FFF] blur-[140px] rounded-full"
+    ></div>
+    <div
+      class="flex absolute top-[469px] min-w-[811px] mix-blend-soft-light min-h-[172px] left-1/2 -translate-x-1/2 bg-white blur-[120px] rounded-full"
+    ></div>
+
+    <img
+      src="./assets/img/grid.png"
+      class="absolute top-[233px] left-1/2 -translate-x-1/2 mix-blend-overlay"
+      alt=""
+    />
+    <img
+      src="./assets/img/why-this-work-1.png"
+      class="absolute top-[293px] left-[340px] z-30 mix-blend-color-dodge max-w-[400px]"
+      alt=""
+    />
+    <img
+      src="./assets/img/why-this-work-2.png"
+      class="absolute top-[357px] right-[340px] z-30 mix-blend-color-dodge max-w-[400px]"
+      alt=""
+    />
+    <div
+      class="flex flex-col w-full max-w-[375px] md:max-w-[1032px] items-center mt-[39px] md:mt-[52px]"
+    >
+      <header class="w-full flex justify-between items-center">
+        <a href="/"
+          ><img
+            src="./assets/img/logo.png"
+            class="max-w-[52px] md:max-w-[126px]"
+            alt=""
+        /></a>
+        <ul class="flex gap-6 items-center">
+          <li>
+            <a
+              href="about-course"
+              class="text-[#ACB6BF] font-medium text-[8px] md:text-lg tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+              >O kursie</a
+            >
+          </li>
+          <li>
+            <a
+              href="why-this-work"
+              class="text-[#ACB6BF] font-medium text-[8px] md:text-lg tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+              >Dlaczego to działa?</a
+            >
+          </li>
+          <li>
+            <a
+              href="/index#faq"
+              class="text-[#ACB6BF] font-medium text-[8px] md:text-lg tracking-[-0.05em] hover:text-white/75 transition-colors duration-300 ease-in-out"
+              >FAQ</a
+            >
+          </li>
+        </ul>
+        <button
+          onclick="window.location.href='about-author'"
+          class="flex z-20 py-2 px-6 md:px-8 hover:opacity-80 transition-opacity cursor-pointer duration-300 ease-in-out rounded-[18px] bg-gradient-to-b from-[#974BF8] to-[#AD7AFF] border-white/25 border shadow-[inset_0px_0px_13px_rgba(255,255,255,0.25)]"
+        >
+          <span
+            class="text-white font-medium text-[8px] md:text-lg tracking-[-0.05em]"
+          >
+            Kim jestem?
+          </span>
+        </button>
+      </header>
+
+      <section
+        class="flex flex-col mt-[28px] md:mt-[52px] gap-[46px] items-center w-full z-50"
+      >
+        <div class="flex flex-col gap-[28px] md:gap-8 items-center">
+          <h1
+            class="text-white leading-[120%] max-w-[335px] md:max-w-full font-semibold text-[32px] md:text-[42px] text-center tracking-[-0.05em]"
+          >
+            Gotowy system biznesowy, który działa
+          </h1>
+          <span
+            class="text-[#B0B0B0] w-full text-[12px] md:text-[20px] font-medium text-center tracking-[-0.05em]"
+          >
+            Pokazuję tylko to, co sam stosuję - zero teorii, tylko sprawdzone
+            metody.
+          </span>
+          <button
+            onclick="window.location.href='payment'"
+            class="flex py-2 md:py-4.5 px-6 md:px-[42px] hover:opacity-80 transition-opacity cursor-pointer duration-300 ease-in-out rounded-[28px] bg-gradient-to-b from-[#8525FF] to-[#B486FF] border-white/25 border shadow-[inset_0px_0px_13px_rgba(255,255,255,0.25)]"
+          >
+            <span
+              class="text-white font-medium text-[12px] md:text-[20px] tracking-[-0.05em]"
+            >
+              Odbierz dostęp
+            </span>
+          </button>
+        </div>
+      </section>
+      <section
+        class="mt-[48px] hidden md:flex flex-col gap-4.5 items-center z-40"
+      >
+        <span class="text-white font-medium text-[27px] tracking-[-0.05em]">
+          460 PLN
+        </span>
+      </section>
+      <section
+        class="flex mt-[48px] flex-col items-center z-40 gap-[88px] md:gap-[120px]"
+      >
+        <span class="text-white font-medium text-[28px] tracking-[-0.05em]">
+          Co otrzymujesz?
+        </span>
+        <div class="flex flex-wrap gap-[52px] md:gap-4 justify-center">
+          <div
+            class="flex relative max-w-[331px] flex-col gap-3 bg-[#0E0E0F] border border-[#2B2C34] rounded-[24px] px-[39px] md:px-[25px] pb-[21px] md:pb-[44px] pt-[110px] md:pt-[110px]"
+          >
+            <img
+              src="./assets/img/bubble.png"
+              class="absolute left-1/2 -translate-x-1/2 bottom-[110px] md:bottom-[155px] max-w-[218px] md:max-w-[202px]"
+              alt=""
+            />
+            <div class="flex flex-col gap-3 items-center max-w-[271px]">
+              <span
+                class="text-white text-center text-[20px] font-medium tracking-[-0.05em]"
+              >
+                Sprawdzone źródła pozyskiwania klientów
+              </span>
+              <span
+                class="text-[#B0B0B0] max-w-[260px] text-center text-[12px] tracking-[-0.05em]"
+              >
+                To nie teoria. Pokazuję konkretne miejsca, platformy i gotowe
+                metody działania.
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex relative max-w-[331px] flex-col gap-3 bg-[#0E0E0F] border border-[#2B2C34] rounded-[24px] px-[39px] md:px-[25px] pb-[21px] md:pb-[44px] pt-[110px] md:pt-[110px]"
+          >
+            <img
+              src="./assets/img/rocket.png"
+              class="absolute left-1/2 -translate-x-1/2 bottom-[110px] md:bottom-[155px] max-w-[202px]"
+              alt=""
+            />
+            <div class="flex flex-col gap-3 items-center max-w-[271px]">
+              <span
+                class="text-white text-center text-[20px] font-medium tracking-[-0.05em]"
+              >
+                Gotowy system zarabiania na delegowaniu
+              </span>
+              <span
+                class="text-[#B0B0B0] max-w-[260px] text-center text-[12px] tracking-[-0.05em]"
+              >
+                Od pierwszego zamówienia do realizacji – cały proces krok po
+                kroku, w jednym miejscu.
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex relative max-w-[331px] flex-col gap-3 bg-[#0E0E0F] border border-[#2B2C34] rounded-[24px] px-[39px] md:px-[25px] pb-[21px] md:pb-[44px] pt-[110px] md:pt-[110px]"
+          >
+            <img
+              src="./assets/img/zoom.png"
+              class="absolute left-1/2 -translate-x-1/2 bottom-[110px] md:bottom-[155px] max-w-[202px]"
+              alt=""
+            />
+            <div class="flex flex-col gap-3 items-center max-w-[271px]">
+              <span
+                class="text-white text-center text-[20px] font-medium tracking-[-0.05em]"
+              >
+                Jak zbudować zespół wykonawców?
+              </span>
+              <span
+                class="text-[#B0B0B0] max-w-[260px] text-center text-[12px] tracking-[-0.05em]"
+              >
+                Dowiesz się, gdzie szukać ludzi, jak ich weryfikować i
+                skutecznie nimi zarządzać.
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="flex md:flex-row flex-col gap-[40px] md:gap-[130px] mt-[28px] md:mt-[82px] mb-[50px] md:mb-[221px] items-center w-full"
+      >
+        <div class="flex flex-col items-center md:items-start gap-3 md:gap-4">
+          <div
+            class="hidden md:flex w-max p-3 bg-[#0E0E0F] rounded-[15px] border border-[#2B2C34]"
+          >
+            <img
+              src="./assets/img/gift.png"
+              class="max-w-[30px] max-h-[30px]"
+              alt=""
+            />
+          </div>
+          <span
+            class="text-white font-medium text-[20px] md:text-[32px] tracking-[-0.05em]"
+          >
+            Bonusy na start
+          </span>
+          <span
+            class="text-[#B0B0B0] max-w-[295px] md:max-w-full md:text-left text-center text-[12px] md:text-[18px] font-medium tracking-[-0.05em]"
+          >
+            Zamknięty czat, gotowa lista wykonawców, szablony, materiały – i mój
+            bezpośredni kontakt, gdy czegoś potrzebujesz.
+          </span>
+        </div>
+        <div
+          class="flex relative min-h-[195px] md:min-h-[263px] w-full max-w-[507px] rounded-3xl bg-linear-to-b from-[#8601FC] to-[#1A132A] h-full"
+        >
+          <img
+            src="./assets/img/giftBox.png"
+            class="absolute left-1/2 z-10 -translate-x-1/2 bottom-[10px] md:bottom-[33px] max-w-[235px] md:max-w-[287px]"
+            alt=""
+          />
+          <img
+            src="./assets/img/star.svg"
+            class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 max-w-[300px] md:max-w-[405px]"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
